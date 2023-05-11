@@ -23,7 +23,7 @@ encoder = LabelEncoder()
 data['class'] = encoder.fit_transform(data['class'])
 data.head()
 
-//adding a new column
+#adding a new column
 data['No char'] = data['test'].apply(len)
 data.head()
 
@@ -62,4 +62,4 @@ if(predict[0] == 0):
   print('!!Check spam!!')
 else:
   print('**Check inbox**')
-//We need to give input 
+#We need to give input 
